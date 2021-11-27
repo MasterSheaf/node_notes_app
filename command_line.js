@@ -1,4 +1,5 @@
 const yargs = require('yargs');
+const notes = require('./notes.js');
 
 yargs.version('1.1.0');
 
@@ -19,11 +20,18 @@ yargs.command({
             describe: 'Note body', // help string
             demandOption: true, // must be title if user used "add"
             type: 'string' // require it to be a string
+        },
+        filename: {
+            describe: 'file where notes are stored', // help string
+            demandOption: true, // must be title if user used "add"
+            type: 'string' // require it to be a string
         }
     },
     handler: function (argv) {
         console.log('Title: ' + argv.title);
         console.log('Body: ' + argv.body);
+        console.log('File: ' + argv.filename);
+        notes.addNote(argv.filename, argv.title, argv.body);
     }
 });
 
