@@ -108,6 +108,8 @@ const findNote = (filename, title) => {
 
     const notes = loadNotes(filename);
 
+    debugger;
+
     const noteWeAreLookingFor = notes.find( (note) => {
         return (note.title === title);
     })
