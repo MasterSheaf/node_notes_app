@@ -1,14 +1,1 @@
-[
-    {
-        "title": "Note #2",
-        "body": "This is a longer note.  I love writing notes"
-    },
-    {
-        "title": "Note #2",
-        "body": "This is a longer note.  I love writing notes"
-    },
-    {
-        "title": "Grocery",
-        "body": "cereal, milk"
-    }
-]
+[{"title":"Grocery List","body":"apples, bagels, tacos, cat food"},{"title":"Body Parts","body":"hands, feet, fingers, Toes"}]
